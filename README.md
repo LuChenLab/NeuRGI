@@ -80,6 +80,8 @@ head(InputData)
 ## A4GALT  0.9747373 0.4963035 0.006955117     2
 ```
 
+
+
 ### 2.PU-learning for reliable negative genes
 
 In this step, we used PU-learning spy algorithm to get reliable negative genes.
@@ -88,6 +90,8 @@ In this step, we used PU-learning spy algorithm to get reliable negative genes.
 RN <- PUlearningForNeg(InputData)
 ## Reliable Negatives has been successfully found.
 ```
+
+
 
 ### 3.Create a balance training data
 
@@ -101,6 +105,8 @@ table(TrainData$Label)
 ##  0   1 
 ## 411 411 
 ```
+
+
 
 ### 4.Training
 
@@ -129,6 +135,8 @@ RFmodels$Performances
 ## 0.9749717     0.9795671     0.9234352     0.8493263     0.9253931 
 ```
 
+
+
 ### 5. Prediction
 
 Predict all genes not in training set. 
@@ -146,6 +154,8 @@ head(Pred)
 ## 1009   ALCAM                1    MP
 ```
 
+
+
 ### 6. GMM classification
 
 In this step, we use Gaussion Mixture Model to claasify **positive , negative and uncertain** genes depending on the prediction.
@@ -161,6 +171,8 @@ table(Pred$classification)
 ##  Negative Uncertain  Positive 
 ##     1469     14047      3536
 ```
+
+
 
 ### (Optional) Feature Importance
 
@@ -184,6 +196,8 @@ Importance$p
 ```
 
 ![img](https://github.com/LuChenLab/NeuRGI/blob/main/pictures/Feature_importance.png?raw=true)
+
+
 
 ### (Optional) *In silico* knockout
 
