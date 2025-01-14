@@ -29,9 +29,9 @@ mclust(>= 6.0.0)
 Loading pipeline and example data set.
 
 ```R
-source("../data/NeuRGI.R")
+source("../scripts/NeuRGI.R")
 ## NeuRGI has successfully been loaded.
-InputData <- readRDS("../data/InputData_example.rds") #example data
+InputData <- readRDS("../data/Example/InputData_example.rds") #example data
 ```
 
 `InputData` is a dataframe, each row is a gene and the rowname is gene symbol (all caps), each column is a feature, and the last column is `Label`, which is `factor` class.
@@ -92,7 +92,7 @@ RN <- PUlearningForNeg(InputData)
 In this step, users can create a balance training data with gene type annotation using down-sampling method, and we offered gene type file `gene_type.rds`.
 
 ```R
-gene_type <- readRDS("../data/01.gene_type.rds")
+gene_type <- readRDS("../data/gene_type.rds")
 TrainData <- TrainingSetDownSample(InputData = InputData,RN = RN, gene_type = gene_type)
 ## Training set has been created.
 table(TrainData$Label)
