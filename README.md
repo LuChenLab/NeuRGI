@@ -1,10 +1,8 @@
 # Neutrophil Regulatory Gene Identifier (NeuRGI)
 
-hezhifeng 2025/01/07
+hezhifeng 2025/01/07      
 
-
-
-
+&nbsp;
 
 ## What is NeuRGI?
 
@@ -12,11 +10,11 @@ NeuRGI is a machine-learning pipeline based on random forest, which also uses PU
 
 You only need to provide a dataset containing  positive set and an unlabeled set, and the NeuRGI process can be used to predict all genes in the unlabeled set.
 
-![img](https://github.com/LuChenLab/NeuRGI/blob/main/pictures/NeuRGI.png?raw=true)
+![img](https://github.com/LuChenLab/NeuRGI/blob/main/pictures/NeuRGI.png?raw=true)  
 
+&nbsp;
 
-
-
+&nbsp;
 
 ## Requirements
 
@@ -32,7 +30,7 @@ PRROC(>= 1.3.1)
 mclust(>= 6.0.0)
 ```
 
-
+&nbsp;
 
 ## Tutorial
 
@@ -86,7 +84,7 @@ head(InputData)
 ## A4GALT  0.9747373 0.4963035 0.006955117     2
 ```
 
-
+&nbsp;
 
 ### 2.PU-learning for reliable negative genes
 
@@ -97,7 +95,7 @@ RN <- PUlearningForNeg(InputData)
 ## Reliable Negatives has been successfully found.
 ```
 
-
+&nbsp;
 
 ### 3.Create a balance training data
 
@@ -112,7 +110,7 @@ table(TrainData$Label)
 ## 411 411 
 ```
 
-
+&nbsp;
 
 ### 4.Training
 
@@ -141,7 +139,7 @@ RFmodels$Performances
 ## 0.9749717     0.9795671     0.9234352     0.8493263     0.9253931 
 ```
 
-
+&nbsp;
 
 ### 5. Prediction
 
@@ -160,7 +158,7 @@ head(Pred)
 ## 1009   ALCAM                1    MP
 ```
 
-
+&nbsp;
 
 ### 6. GMM classification
 
@@ -178,7 +176,7 @@ table(Pred$classification)
 ##     1469     14047      3536
 ```
 
-
+&nbsp;
 
 ### (Optional) Feature Importance
 
@@ -203,13 +201,13 @@ Importance$p
 
 ![img](https://github.com/LuChenLab/NeuRGI/blob/main/pictures/Feature_importance.png?raw=true)
 
-
+&nbsp;
 
 ### (Optional) *In silico* knockout
 
 You can further use [OntoVAE](https://github.com/hdsu-bioquant/onto-vae) to perform *in silico* knockout of predicted functional genes based on the own GMM classification results. We have placed the script at `OntoVAE.ipynb`
 
-
+&nbsp;
 
 ## SessionInfo
 
@@ -255,13 +253,13 @@ sessionInfo()
 ## [79] Rcpp_1.0.11          vctrs_0.6.3          rpart_4.1-15         tidyselect_1.2.0     xfun_0.43
 ```
 
-
+&nbsp;
 
 ## Contact
 
 Please contact Lu Chen ([luchen@scu.edu.cn](mailto:luchen@scu.edu.cn)) or Zhifeng He ([hzf4304@163.com](mailto:hzf4304@163.com)).
 
-
+&nbsp;
 
 ## Citation
 
