@@ -10,7 +10,7 @@ NeuRGI is a machine-learning pipeline based on random forest, which also uses PU
 
 You only need to provide a dataset containing  positive set and an unlabeled set, and the NeuRGI process can be used to predict all genes in the unlabeled set.
 
-![img](https://github.com/LuChenLab/MRGI/blob/main/MRGI.jpg?raw=true)
+![img](https://github.com/LuChenLab/NeuRGI/blob/main/pictures/NeuRGI.png?raw=true)
 
 ## Requirements
 
@@ -183,7 +183,7 @@ head(Importance$df)
 Importance$p
 ```
 
-![img](https://github.com/LuChenLab/NeuRGI)
+![img](https://github.com/LuChenLab/NeuRGI/blob/main/pictures/Feature_importance.png?raw=true)
 
 ### (Optional) *In silico* knockout
 
