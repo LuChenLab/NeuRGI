@@ -6,7 +6,7 @@ hezhifeng 2025/01/07
 
 ## What is NeuRGI?
 
-NeuRGI is a machine-learning pipeline based on random forest, which also uses PU learning, GMM and neural networks to find genes that affect neutrophil differeatiation and function. This model is developed based on neutrophils, but it can also be expanded to different fields according to different data, such as the hematopoietic differentiation process (myeloid, lymphoid, erythroid) and so on.
+`NeuRGI` is a machine-learning pipeline based on random forest, which also uses PU learning, GMM and neural networks to find genes that affect neutrophil differeatiation and function. This model is developed based on neutrophils, but it can also be expanded to different fields according to different data, such as the hematopoietic differentiation process (myeloid, lymphoid, erythroid) and so on.
 
 You only need to provide a dataset containing  positive set and an unlabeled set, and the NeuRGI process can be used to predict all genes in the unlabeled set.
 
@@ -261,5 +261,5 @@ Please contact Lu Chen ([luchen@scu.edu.cn](mailto:luchen@scu.edu.cn)) or Zhifen
 
 ## Citation
 
-If you use NeuRGI pipeline in your publication, please cite by
+If you use `NeuRGI`  in your publication, please cite by
 
