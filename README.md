@@ -59,7 +59,7 @@ head(InputData)
 ```
 
 ```R
-## 		Feature1 Feature2 Feature3 Feature4   Feature5 Feature6    Feature7     Feature8  Feature9   Feature10   Feature11    Feature12
+## 	  Feature1 Feature2 Feature3 Feature4   Feature5 Feature6    Feature7     Feature8  Feature9   Feature10   Feature11    Feature12
 ## A1BG           0        0    0.000    0.000 0.0000e+00        0 -0.06127166 7.974781e-01 0.7663269  20.4633333 -0.23486545 0.7481653905
 ## A1CF           0        0    0.604    0.692 5.9218e-10       71 -0.36010805 1.188509e-01 1.0000000   0.2400000 -0.10472665 0.1005016969
 ## A2M            0        0    0.529    0.769 4.5229e-11      147  0.39735134 8.276791e-02 0.8577036 520.5550000  5.19989430 0.0020573143
