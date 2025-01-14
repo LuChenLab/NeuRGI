@@ -14,8 +14,6 @@ You only need to provide a dataset containing  positive set and an unlabeled set
 
 &nbsp;
 
-&nbsp;
-
 ## Requirements
 
 The pipeline has been tested in `R 4.0.0` and the following packages are needed to be installed in `R`
