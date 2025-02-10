@@ -195,7 +195,7 @@ Importance$p
 
 ### (Optional) *In silico* knockout
 
-You can further use [OntoVAE](https://github.com/hdsu-bioquant/onto-vae) to perform *in silico* knockout of predicted functional genes based on GMM classification results. We have placed the script at `scripts/OntoVAE.ipynb`. Due to GitHub's file size limitations, five essential files required by `OntoVAE.ipynb`, along with the trained model checkpoints used in the paper were uploaded to the [figshare repository](https://figshare.com/articles/dataset/NeuRGI-OntoVAE/28374878).
+You can further use [OntoVAE](https://github.com/hdsu-bioquant/onto-vae) to perform *in silico* knockout of predicted functional genes based on GMM classification results. We have placed the script at `scripts/OntoVAE.ipynb`. Due to GitHub's file size limitations, four essential files required by `OntoVAE.ipynb`, along with the trained model checkpoints used in the paper were uploaded to the [figshare repository](https://figshare.com/articles/dataset/NeuRGI-OntoVAE/28374878).
 
 &nbsp;
 
