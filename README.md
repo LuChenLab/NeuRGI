@@ -42,7 +42,7 @@ In our example InputData, positive set was `Label` = 1,unlabel set was `Label` =
 dim(InputData)
 ## [1] 19874    28
 table(InputData$Label)
-##  1			2
+##  1	  2
 ## 411	19463 
 ```
 
@@ -195,7 +195,14 @@ Importance$p
 
 ### (Optional) *In silico* knockout
 
-You can further use [OntoVAE](https://github.com/hdsu-bioquant/onto-vae) to perform *in silico* knockout of predicted functional genes based on the own GMM classification results. We have placed the script at `OntoVAE.ipynb`.
+You can further use [OntoVAE](https://github.com/hdsu-bioquant/onto-vae) to perform *in silico* knockout of predicted functional genes based on GMM classification results. We have placed the script at `scripts/OntoVAE.ipynb`. Due to GitHub's file size limitations, five essential files required by `OntoVAE.ipynb`, along with the trained model checkpoints used in the paper were uploaded to the [figshare repository](https://figshare.com/articles/dataset/NeuRGI-OntoVAE/28374878).
+
+&nbsp;
+
+### (Optional) Reproduce neutrophil-specific model in paper
+
+If you want to reproduce the Neutrophil-specific model result in our manuscript, you can replace the `TrainData` of step4 by `TrainData.rds`  and the `InputData` of step5 by `InputData.rds` deposited in `data/Neutrophil/`, and rerun the pipeline from step4 to step6. 
+If you are interested in the myeloid-specific model, you can replace the `InputData` of step1 by `InputData.rds` deposited in `data/Myeloid/`, and rerun the pipeline from step1 to step6.
 
 &nbsp;
 
